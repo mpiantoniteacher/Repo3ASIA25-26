@@ -1,0 +1,18 @@
+{
+  "name": "C++ Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/cpp:latest",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "editor.formatOnSave": true
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y cmake gdb",
+  "remoteUser": "vscode"
+}
